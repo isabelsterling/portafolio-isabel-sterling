@@ -1,1 +1,470 @@
+/* Styles general para proyectos y contacto
 
+/* ===================================
+   CSS GENERAL PARA PROYECTOS Y CONTACTO
+   ================================== */
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales del body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0A192F;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 1rem;
+}
+
+/* ===================================
+   NAVBAR
+   ================================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003980;
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-brand img {
+  height: 45px;
+  width: auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FF7F50;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe57;
+}
+
+/* ===================================
+   MAIN
+   ================================== */
+
+main {
+  background: #F5F5F5;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+h1 {
+  color: #4682B4;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #4682B4;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: #FF7F50;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===================================
+   PÁGINA DE PROYECTOS
+   ================================== */
+
+.proyectos-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.proyectos-intro p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.categoria-proyectos {
+  margin-bottom: 3rem;
+}
+
+.categoria-proyectos h2 {
+  font-size: 1.8rem;
+  color: #4682B4;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #FF7F50;
+}
+
+.proyecto-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(70, 130, 180, 0.2);
+  border-color: #4682B4;
+}
+
+.proyecto-card h3 {
+  color: #4682B4;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.proyecto-card p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: #e8f4f8;
+  color: #4682B4;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 1px solid #d0e8f0;
+}
+
+/* ===================================
+   PÁGINA DE CONTACTO
+   ================================== */
+
+.contacto-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.contacto-intro p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Tarjetas de información */
+.info-contacto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contacto-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contacto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(70, 130, 180, 0.2);
+  border-color: #4682B4;
+}
+
+.contacto-icono {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contacto-card h3 {
+  color: #4682B4;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto h2 {
+  text-align: center;
+  color: #4682B4;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4682B4;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #FF7F50, #ff9470);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(135deg, #e76b3f, #ff8860);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 127, 80, 0.3);
+}
+
+/* Redes sociales */
+.redes-sociales {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+.redes-sociales h2 {
+  color: #4682B4;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.redes-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.red-social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.red-social:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.red-social.facebook:hover {
+  border-color: #1877f2;
+  color: #1877f2;
+}
+
+.red-social.instagram:hover {
+  border-color: #e4405f;
+  color: #e4405f;
+}
+
+.red-social.linkedin:hover {
+  border-color: #0077b5;
+  color: #0077b5;
+}
+
+.red-social.github:hover {
+  border-color: #333;
+  color: #333;
+}
+
+.red-icono {
+  font-size: 1.3rem;
+}
+
+/* ===================================
+   FOOTER
+   ================================== */
+
+footer {
+  background: #003980;
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-info h3,
+.footer-redes h3 {
+  color: #FF7F50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-info p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-logo,
+.footer-banner {
+  flex: 0 0 200px;
+}
+
+.footer-banner img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Redes sociales como botones */
+.redes-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.btn-red {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.btn-red:hover {
+  background: white;
+  color: #003980;
+  border-color: #FF7F50;
+  transform: translateY(-2px);
+}
+
+/* Responsive para el footer */
+@media (max-width: 768px) {
+  .footer-contenido {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-banner {
+    flex: 0 0 auto;
+  }
+}

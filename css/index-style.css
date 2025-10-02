@@ -1,0 +1,556 @@
+/* ===================================
+   CSS EXCLUSIVO PARA INDEX.HTML
+   ================================== */
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales del body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0A192F;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 1rem;
+}
+
+/* ===================================
+   NAVBAR
+   ================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003980;
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-brand img {
+  height: 45px;
+  width: auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FF7F50;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe57;
+}
+
+/* ===================================
+   MAIN
+   ================================== */
+main {
+  background: #F5F5F5;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* ===================================
+   PRESENTACIÓN
+   ================================== */
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ddd; /* línea gris clara */
+}
+
+.presentacion-texto {
+  flex: 1;
+}
+
+.presentacion-texto h1 {
+  color: #4682B4;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.presentacion-texto p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.presentacion-imagen {
+  flex: 0 0 220px;
+}
+
+.presentacion-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================================
+   HABILIDADES
+   ================================== */
+.habilidades {
+  margin-bottom: 3rem;
+}
+
+.habilidades h2 {
+  color: #4682B4;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.habilidad-card {
+  background: white;
+  border: 2px solid #4682B4;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.habilidad-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(70, 130, 180, 0.3);
+}
+
+.habilidad-card h3 {
+  color: #FF7F50;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.habilidad-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===================================
+   CERTIFICADOS
+   ================================== */
+.certificados {
+  margin-bottom: 2rem;
+}
+
+.certificados h2 {
+  color: #4682B4;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.certificados-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.certificado-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  max-width: 300px;
+}
+
+.certificado-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-color: #4682B4;
+}
+
+.certificado-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.certificado-card h3 {
+  color: #4682B4;
+  font-size: 1.1rem;
+}
+
+/* ===================================
+   CERTIFICADOS CON EFECTO FLIP
+   ================================== */
+
+.flip-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.flip-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4682B4;
+}
+
+.descripcion-certificados {
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #555;
+}
+
+.flip-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flip-card {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 1px solid rgba(139, 139, 139, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #333;
+  text-align: center;
+}
+
+.flip-card-front img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.flip-card-front h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #4682B4;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.flip-card-back p {
+  margin: 0;
+  color: #555;
+}
+
+/* ===================================
+   SERVICIOS QUE OFREZCO
+   ================================== */
+
+/* Sección de servicios */
+.servicios {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.servicios h2 {
+  font-size: 2.5rem;
+  color: #4682B4;
+  margin-bottom: 2rem;
+}
+
+.lista-servicios {
+  list-style: none;
+  padding-left: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.lista-servicios li {
+  background: #ffffff;
+  border-left: 4px solid #4682B4;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  line-height: 1.6;
+  text-align: left;
+  color: #333;
+  font-size: 1rem;
+}
+
+.lista-servicios li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(70, 130, 180, 0.3);
+  border-left-color: #FF7F50;
+}
+
+.lista-servicios li:last-child {
+  margin-bottom: 0;
+}
+
+/* ===================================
+   IMAGENES DEMOSTRATIVAS
+   ================================== */
+
+/* Sección de galería */
+
+.galeria {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #F5F5F5;
+  box-shadow: none;
+  border-radius: 12px;
+  margin-top: -2rem;
+}
+
+.galeria h2 {
+  font-size: 2.5rem;
+  color: #4682B4;
+  margin-bottom: 2rem;
+}
+
+.contenedor-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.galeria-item {
+  flex: 0 1 300px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(70, 130, 180, 0.3);
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #4682B4;
+}
+
+.galeria-item figcaption {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+/* ===================================
+   FOOTER
+   ================================== */
+
+footer {
+  background: #003980;
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-info h3,
+.footer-redes h3 {
+  color: #FF7F50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-info p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-logo,
+.footer-banner {
+  flex: 0 0 200px;
+}
+
+.footer-banner img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Redes sociales como botones */
+.redes-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.btn-red {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.btn-red:hover {
+  background: white;
+  color: #003980;
+  border-color: #FF7F50;
+  transform: translateY(-2px);
+}
+
+/* ===================================
+   RESPONSIVE
+   ================================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .presentacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presentacion-imagen {
+    flex: 0 0 auto;
+  }
+
+  .habilidades-grid,
+  .certificados-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contenido {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
