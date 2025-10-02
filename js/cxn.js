@@ -25,7 +25,7 @@ const db = getFirestore(app);
 
 // Esperar a que el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
-  // Obtener el formulario
+  // Línea añadida por tu profesor: Obtener el formulario
   const form = document.getElementById("contacto-form");
 
   // Verificar si el formulario existe (solo en páginas con formulario, como Contacto.html)
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return; // Detener el envío
     }
 
-    // Validación simple de email
+    // Validación simple de emaiL
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       alert("Por favor, ingresa un email válido.");
